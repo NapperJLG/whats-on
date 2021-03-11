@@ -9,5 +9,14 @@ export const Header = styled.header`
 
 export const Body = styled.body`
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 32px;
+`;
+
+export const MovieCards = styled.section`
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-wrap: wrap;
 `;

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Body, Header } from './AppStyle';
+import { Body, Header, MovieCards } from './AppStyle';
+import { MovieCard } from './Components/MovieCard/MovieCard';
 
 const App = () => {
   return (
@@ -9,6 +10,13 @@ const App = () => {
       </Header>
       <Body>
         <h2>Browse through our list of films showing at the cinema right now!</h2>
+        <MovieCards className="mt3">
+          <MovieCard />
+          <MovieCard />
+          <MovieCard />
+          <MovieCard />
+        </MovieCards>
+
       </Body>
 
     </React.Fragment>
