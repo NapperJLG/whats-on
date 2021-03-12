@@ -9,10 +9,11 @@ export const MoviesPage = (props: { movieData: Movie[] | null }) => {
         <React.Fragment>
             <h2>Browse through our list of films showing at the cinema right now!</h2>
             <MovieCards className="mt3">
-                <MovieCard />
-                <MovieCard />
-                <MovieCard />
-                <MovieCard />
+                {props.movieData?.map((movie: Movie) => {
+                    return (
+                        <MovieCard movie={movie} />
+                    )
+                })}
             </MovieCards>
         </React.Fragment>
     )
