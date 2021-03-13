@@ -16,10 +16,31 @@ export const MovieCardContainer = styled.div`
   background-color: white;
   height: 500px;
   width: 270px;
+  position: relative;
 `;
 
 export const MoviePoster = styled.img`
   height: 80%;
+`;
+
+export const MovieDetailsOverlay = styled.div`
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 80%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+  color: white;
+  padding: 0 16px;
+  &:hover {
+    opacity: 0.9;
+  }
 `;
 
 export const MovieInfo = styled.div`
