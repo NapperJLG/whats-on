@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+const setRatingColour = (rating: number) => {
+  if (rating >= 7) {
+    return "green";
+  } else if (rating >= 4 && rating < 7) {
+    return "#edc411";
+  } else {
+    return "red";
+  }
+};
+
 export const MovieCardContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -23,13 +33,11 @@ export const MovieDetails = styled.div`
   justify-content: space-between;
 `;
 
-export const MovieRating = styled.div`
-  background-color: green;
+export const MovieRating = styled.div<{ rating: number }>`
+  background-color: ${(props) => setRatingColour(props.rating)};
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 36px;
   color: white;
 `;
-
-//yellow colour #edc411

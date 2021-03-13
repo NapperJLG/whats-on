@@ -14,7 +14,7 @@ export const MovieCard = (props: { movie: Movie }) => {
                     <span>{movie.title}</span>
                     <span>{movie.releaseDate}</span>
                 </MovieDetails>
-                <MovieRating className="col col-3"><span>{movie.voteAverage}</span></MovieRating>
+                <MovieRating rating={movie.voteAverage} className="col col-3"><span>{movie.voteAverage}</span></MovieRating>
 
             </MovieInfo>
         </MovieCardContainer>
