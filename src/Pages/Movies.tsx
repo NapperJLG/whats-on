@@ -29,7 +29,7 @@ export const MoviesPage = (props: { movieData: Movie[] | null; setSortQueryStrin
 
         <React.Fragment>
             <h2>Browse through our list of films showing at the cinema right now!</h2>
-            <div className="self-start col col-2">
+            <div className="self-start sm-col col-12 md-col-6 lg-col-2">
                 <Dropdown list={filterList} callback={(item: string) => { applySort(item) }} />
             </div>
             <MovieCards className="mt3">

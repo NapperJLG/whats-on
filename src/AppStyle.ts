@@ -19,4 +19,5 @@ export const MovieCards = styled.section`
   width: auto;
   height: auto;
   flex-wrap: wrap;
+  justify-content: center;
 `;
