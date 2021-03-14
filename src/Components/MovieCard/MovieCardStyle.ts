@@ -53,6 +53,7 @@ export const MovieDetailsOverlay = styled.div`
   transition: 0.5s ease;
   color: white;
   padding: 0 16px;
+  overflow-y: scroll;
   &:hover {
     opacity: 0.9;
   }

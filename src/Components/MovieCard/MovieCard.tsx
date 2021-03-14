@@ -15,7 +15,11 @@ export const MovieCard = (props: { movie: Movie }) => {
             <ImageErrorContainer imageError={imageError}>
                 <span>No Poster Available</span>
             </ImageErrorContainer>
-            <MovieDetailsOverlay>{movie.overview ? movie.overview : "No description available"}</MovieDetailsOverlay>
+            <MovieDetailsOverlay>
+                <div className="mt3">
+                    <p>{movie.overview ? movie.overview : "No description available"}</p>
+                </div>
+            </MovieDetailsOverlay>
             <MovieInfo className="col col-12">
                 <MovieDetails className="col col-9 p1">
                     <span>{movie.title}</span>
