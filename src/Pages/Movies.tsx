@@ -1,11 +1,10 @@
-import { Pagination } from '@material-ui/lab';
 import React from 'react';
 import { CustomPagination, MovieCards } from '../AppStyle';
 import { Dropdown } from '../Components/Dropdown/Dropdown';
 import { MovieCard } from '../Components/MovieCard/MovieCard';
 import { Movie } from '../types';
 
-export const MoviesPage = (props: { movieData: Movie[] | null; setSortQueryString: React.Dispatch<React.SetStateAction<string>>; pageTotal: number | undefined; setSelectedPage: Function }) => {
+export const MoviesPage = (props: { movieData: Movie[] | null; setSortQueryString: React.Dispatch<React.SetStateAction<string>>; pageTotal: number | undefined; setSelectedPage: React.Dispatch<React.SetStateAction<number>> }) => {
 
     const filterList = ["Rating (Low to High)", "Rating (High to Low)", "Popularity (Low to High)", "Popularity (High to Low)"]
 

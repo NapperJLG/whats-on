@@ -8,7 +8,7 @@ export const Header = styled.header`
   display: flex;
 `;
 
-export const Body = styled.body`
+export const Body = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
