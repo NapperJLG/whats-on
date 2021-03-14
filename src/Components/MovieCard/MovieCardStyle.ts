@@ -23,6 +23,21 @@ export const MoviePoster = styled.img`
   height: 80%;
 `;
 
+export const ImageErrorContainer = styled.div<{ imageError: boolean }>`
+  position: absolute;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: ${(props) => (props.imageError ? "1" : "0")};
+  background-color: black;
+  color: white;
+`;
+
 export const MovieDetailsOverlay = styled.div`
   position: absolute;
   display: flex;
