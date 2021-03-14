@@ -1,3 +1,4 @@
+import { Pagination } from "@material-ui/lab";
 import styled from "styled-components";
 
 export const Header = styled.header`
@@ -20,4 +21,10 @@ export const MovieCards = styled.section`
   height: auto;
   flex-wrap: wrap;
   justify-content: center;
+`;
+ 
+export const CustomPagination = styled(Pagination)`
+  & .MuiPaginationItem-root {
+    color: white;
+  }
 `;
