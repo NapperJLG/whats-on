@@ -13,6 +13,6 @@ A React app that displays a list of movies currently showing movies fetched from
 - Run the command `npm start` in your terminal.
 - Open [http://localhost:3000](http://localhost:3000) to view the app in the browser.
 
-![App Screenshot](/public/Screenshots/screenshot_1.png)
+![App Screenshot](/public/Screenshots/screenshot_1.jpg)
 
 
