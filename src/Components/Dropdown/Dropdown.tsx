@@ -3,7 +3,7 @@ import { DropdownArrow, DropdownContainer, DropdownHeader, DropdownItem, Dropdow
 import dropdownArrow from '../../Assets/Icons/dropdown_arrow.svg'
 import { useOutsideAlerter } from '../../utils';
 
-export const Dropdown = (props: React.HtmlHTMLAttributes<HTMLDivElement> & { list: string[]; callback: Function }) => {
+export const Dropdown = (props: React.HtmlHTMLAttributes<HTMLDivElement> & { list: string[]; callback: Function; title: string }) => {
 
     const containerRef = useRef(null)
 
@@ -23,7 +23,7 @@ export const Dropdown = (props: React.HtmlHTMLAttributes<HTMLDivElement> & { lis
     return (
         <DropdownContainer ref={containerRef}>
             <DropdownHeader onClick={() => setIsOpen(!isOpen)} >
-                <DropdownTitle>{selectedItem ? selectedItem : "Filter by..."}</DropdownTitle>
+                <DropdownTitle>{selectedItem ? selectedItem : props.title}</DropdownTitle>
                 <IconContainer>
                     <DropdownArrow isOpen={isOpen} src={dropdownArrow} />
                 </IconContainer>
