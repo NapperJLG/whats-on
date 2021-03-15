@@ -2,6 +2,8 @@
 
 A React app that displays a list of movies currently showing movies fetched from [The Movie Database API](https://developers.themoviedb.org/3/getting-started/introduction). The list can be sorted using the dropdown and a description of each movie can be seen by hovering over the poster.
 
+View the app [here](https://whats-on-5c86e.web.app/).
+
 ## Tech Stack
 - React
 - Typescript
